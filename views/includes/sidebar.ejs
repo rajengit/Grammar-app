@@ -1,0 +1,27 @@
+<!-- sidebar -->
+<div
+  id="sidebar-menu"
+  class="w-52 h-screen text-[#162f2a] fixed left-0 hidden overflow-auto scroll-m-0 z-30 pt-4 md:block bg-[#EFEFEF]"
+>
+  <!-- Sidebar content goes here -->
+  <h2 class="text-2xl pl-5 text-left font-semibold mb-4">
+    <%=data[0].topic %>
+  </h2>
+  <ul class="text-center p-0">
+    <% data.forEach(function(item) { %>
+      
+    <li id="  " class=" p-0  hover:bg-[#006A57]">
+      
+        <a href="<%= item.url %>" class="text-[#006A57] py-1 pr-60 pl-4 font-custome  text-[18px] hover:text-white"
+          ><%= item.title %></a
+        >
+      
+    </li>
+    <% }); %>
+    <!-- <li><a href="#" class="text-gray-300 hover:text-white">Lin</a></li>
+        <li><a href="#" class="text-gray-300 hover:text-white">Link 2</a></li>
+        <li><a href="#" class="text-gray-300 hover:text-white">Link 3</a></li>
+        <li><a href="#" class="text-gray-300 hover:text-white">Link 4</a></li> -->
+  </ul>
+  <script src="/js/script.js"></script>
+</div>
